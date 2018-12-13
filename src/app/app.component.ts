@@ -8,7 +8,9 @@ import { Todo } from './classes/todo';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private _todoService: TodoService) {
+  _todoService: TodoService;
+  
+  constructor(_todoService: TodoService) {
     this._todoService = _todoService;
   }
 }

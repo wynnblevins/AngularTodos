@@ -2,7 +2,7 @@
   <div class="row full-height">
     <div class="col-6 mx-auto todo-container">
       <app-header></app-header> 
-      <app-todo-input (addTodo)="addTodo(todo)"></app-todo-input>  
+      <app-todo-input></app-todo-input>  
       <div *ngFor="let todo of _todoService.getTodos();">
         <app-todo-item [todo]="todo"></app-todo-item>
       </div>
