@@ -1,0 +1,9 @@
+.todo-container {
+  margin-top: 2%;
+  border: #29a7f1 solid 10px;
+  height: 94%; 
+}
+
+.full-height {
+  height: 100%;
+}

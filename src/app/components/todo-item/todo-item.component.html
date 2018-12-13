@@ -1,0 +1,24 @@
+<div class="todo-item">
+  <div *ngIf="editing">
+    <div class="input-group">
+      <input type="text" class="form-control" [(ngModel)]="newTodoText">  
+      <span class="input-group-btn">
+        <button type="button" (click)="saveTodo()" 
+          class="btn btn-primary">Save</button>
+        <button type="button" (click)="cancelEdit()" 
+          class="btn btn-danger left-buffer">Cancel</button>
+      </span>
+    </div>
+  </div>
+  <div *ngIf="!editing">
+    <div class="input-group">
+      <p class="form-control">{{ todo.text }}</p>
+      <span class="input-group-btn">
+        <button type="button" (click)="editTodo()" 
+          class="btn btn-default left-buffer">Edit</button>    
+        <button type="button" (click)="removeTodo()" 
+          class="btn btn-danger left-buffer">Remove</button>
+      </span>  
+    </div>    
+  </div>    
+</div>
